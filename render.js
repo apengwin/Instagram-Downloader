@@ -1,7 +1,7 @@
 /* Content Script. */
 var render = function() {
   console.log("hi");
-  $(function() {
+  $(function(){
     var a = $("img").filter(":onScreen");
     console.log(a);
   });
