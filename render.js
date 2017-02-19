@@ -2,15 +2,26 @@
  * Content Script.
  */
 var render = function() {
-  console.log("hi");
   $(function(){
     var tag = $("img").filter(":onScreen._icyx7");
-    console.log(tag);
-    link = tag.attr("src");
+    if (tag.length % 3 == 0 || tag == 2) {
+      return;
+    }
+    if (tag.length == 1) {
+      link = tag.attr("src");
+    } else {
+      seen = [];
+      tag.each(function (){
+        link = $(this).attr("src");
+        if (seen.includes(link)) {
+          return false;
+        }
+        seen.push(link);
+      });
+    }
     window.open(link, "_blank");
   });
-}
-console.log("JSDJF:KLDS");
+};
 
 chrome.runtime.onMessage.addListener(
   function(message, sender, callback) {

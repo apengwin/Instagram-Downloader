@@ -11,7 +11,6 @@ var onClick = function (info) {
     });
   });
 }
-console.log("ASDFDSFDSFDS");
 chrome.contextMenus.create(
   {"contexts": ["page"],
    "onclick": onClick,
