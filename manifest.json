@@ -8,7 +8,13 @@
     "notifications",
     "contextMenus"
   ],
-  "background":{
-    "scripts": ["script.js","jquery.min.js", "onscreen.js"]
-  }
+  "background": {
+    "scripts": ["script.js"] 
+  },
+  "content_scripts":[
+    {
+      "matches": ["https://*/*"],
+      "js":["render.js","jquery.min.js", "onscreen.js"]
+    }
+  ]
 }
