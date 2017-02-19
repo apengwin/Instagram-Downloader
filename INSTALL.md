@@ -15,8 +15,8 @@ Either with git or by downloading a zip.
 
 Go to `chrome://extensions`, and turn on developer mode. 
 
-Select Developer mode.
+Click `Load unpacked extension` and select this repo.
 
-Click `Load unpacked extension` and select this repo. Check `Enabled` if you haven't done so already. Refresh.
+Check `Enabled` if you haven't done so already.
 
-
+Refresh.
