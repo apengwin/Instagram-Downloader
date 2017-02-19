@@ -16,7 +16,7 @@ var instagramUrls = ["https://*.instagram.com/*", "https://*.instagram.com/"];
 chrome.contextMenus.create(
   {"contexts": ["page"],
    "onclick": onClick,
-   "title": "Open Image.",
+   "title": "Open Image in New Tab",
    "documentUrlPatterns": instagramUrls
   }
 );
