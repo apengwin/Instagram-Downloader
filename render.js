@@ -5,8 +5,7 @@ var render = function() {
   console.log("hi");
   $(function(){
     var tag = $("img").filter(":onScreen._icyx7");
-    console.log("oh");
-    console.log(tag[0]);
+    console.log(tag);
     link = tag.attr("src");
     window.open(link, "_blank");
   });
