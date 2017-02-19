@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "ig helper",
+  "description": "download ig photos",
+  "version": "0.1",
+  "permissions": [
+    "https://instagram.com/",
+    "notifications",
+    "contextMenus"
+  ],
+  "background":{
+    "scripts": ["script.js","jquery.min.js", "onscreen.js"]
+  }
+}
