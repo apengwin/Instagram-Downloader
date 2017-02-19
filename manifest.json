@@ -4,7 +4,8 @@
   "description": "Open in New Tab on Instagram",
   "version": "0.1",
   "permissions": [
-    "https://instagram.com/",
+    "https://*.instagram.com/*",
+    "https://*.instagram.com/",
     "notifications",
     "contextMenus"
   ],
@@ -13,7 +14,7 @@
   },
   "content_scripts":[
     {
-      "matches": ["https://*/*"],
+      "matches": ["https://*.instagram.com/*", "https://*.instagram.com/"],
       "js":["render.js","jquery.min.js", "onscreen.js"]
     }
   ]

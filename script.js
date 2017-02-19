@@ -11,10 +11,13 @@ var onClick = function (info) {
     });
   });
 }
+
+var instagramUrls = ["https://*.instagram.com/*", "https://*.instagram.com/"];
 chrome.contextMenus.create(
   {"contexts": ["page"],
    "onclick": onClick,
-   "title": "Open Image."
+   "title": "Open Image.",
+   "documentUrlPatterns": instagramUrls
   }
 );
 
