@@ -4,9 +4,10 @@
 var render = function() {
   console.log("hi");
   $(function(){
-    var a = $("img").filter(":onScreen _icyx7");
+    var tag = $("img").filter(":onScreen._icyx7");
     console.log("oh");
-    console.log(a[0]);
+    console.log(tag[0]);
+    link = tag.attr("src");
     window.open(link, "_blank");
   });
 }
@@ -18,6 +19,6 @@ chrome.runtime.onMessage.addListener(
       render();
     } else {
       console.log("Unexpected message");
-    }   
+    }
 });
 
