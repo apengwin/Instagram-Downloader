@@ -1,3 +1,6 @@
+/*
+ * Background stuff.
+ */
 var onClick = function (info) {
   chrome.tabs.query({
     active: true,
@@ -8,10 +11,11 @@ var onClick = function (info) {
     });
   });
 }
-
+console.log("ASDFDSFDSFDS");
 chrome.contextMenus.create(
   {"contexts": ["page"],
    "onclick": onClick,
    "title": "Open Image."
   }
 );
+
