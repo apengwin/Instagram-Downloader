@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "ig helper",
-  "description": "download ig photos",
+  "name": "Instagram Downloader",
+  "description": "Open in New Tab on Instagram",
   "version": "0.1",
   "permissions": [
     "https://instagram.com/",
