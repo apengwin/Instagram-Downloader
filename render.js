@@ -4,7 +4,7 @@
 var render = function() {
   $(function(){
     var tag = $("img, video").filter(":onScreen._icyx7, :onScreen._c8hkj");
-    if (tag.length % 3 == 0 || tag == 2) {
+    if (tag.length % 3 == 0) {
       return;
     }
     if (tag.length == 1) {
