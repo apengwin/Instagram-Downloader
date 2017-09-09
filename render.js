@@ -3,7 +3,7 @@
  */
 var render = function() {
   $(function(){
-    var tag = $("img, video").filter(":onScreen._icyx7, :onScreen._c8hkj");
+    var tag = $("img, video").filter(":onScreen._2di5p, :onScreen._l6uaz");
     if (tag.length % 3 == 0 || tag == 2) {
       return;
     }
